@@ -178,3 +178,13 @@
 // if (friends.includes('Steven')) {
 //   console.log(`You have a friend named Steven.`);
 // }
+
+// Lecture 42: Introduction to Objects
+
+const justice = {
+  firstName: 'justice',
+  lastName: 'pelteir',
+  age: 2022 - 1995,
+  job: 'teacher',
+  friends: ['michael', 'peter', 'john']
+};

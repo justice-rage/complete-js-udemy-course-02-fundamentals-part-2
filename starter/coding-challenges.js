@@ -59,20 +59,20 @@ Steven is still building his tip calculator, using the same rules as before: Tip
 Test Data: 125, 555 and 44
 */
 
-const calculateTip = function(bill) {
-  let tip;
+// const calculateTip = function(bill) {
+//   let tip;
 
-  if(bill >= 50 && bill <= 300) {
-    tip = bill * .15;
-  } else {
-    tip = bill * .2;
-  }  return tip;
-}
+//   if(bill >= 50 && bill <= 300) {
+//     tip = bill * .15;
+//   } else {
+//     tip = bill * .2;
+//   }  return tip;
+// }
 
-const bills = [125, 555, 44];
-let tips = [calculateTip(bills[0]), calculateTip(bills[1]), calculateTip(bills[2])];
-let total = [bills[0] + calculateTip(bills[0]), bills[1] + calculateTip(bills[1]), bills[2] + calculateTip(bills[2])];
+// const bills = [125, 555, 44];
+// let tips = [calculateTip(bills[0]), calculateTip(bills[1]), calculateTip(bills[2])];
+// let total = [bills[0] + calculateTip(bills[0]), bills[1] + calculateTip(bills[1]), bills[2] + calculateTip(bills[2])];
 
-console.log(bills);
-console.log(tips);
-console.log(total);
+// console.log(bills);
+// console.log(tips);
+// console.log(total);
