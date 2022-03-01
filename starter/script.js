@@ -181,6 +181,16 @@
 
 // Lecture 42: Introduction to Objects
 
+// const justice = {
+//   firstName: 'justice',
+//   lastName: 'pelteir',
+//   age: 2022 - 1995,
+//   job: 'teacher',
+//   friends: ['michael', 'peter', 'john']
+// };
+
+// Lecture 43: Dot vs. Bracket Notation
+
 const justice = {
   firstName: 'justice',
   lastName: 'pelteir',
@@ -188,3 +198,29 @@ const justice = {
   job: 'teacher',
   friends: ['michael', 'peter', 'john']
 };
+
+// console.log(justice);
+
+// console.log(justice.lastName);
+// console.log(justice['lastName']);
+
+// const nameKey = 'Name';
+// console.log(justice['first' + nameKey]);
+// console.log(justice['last' + nameKey]);
+
+// const interestedIn = prompt('What do you want to know about Justice? Choose between firstName, lastName, age, job and friends.');
+// console.log(justice[interestedIn]);
+
+// if(justice[interestedIn]) {
+//   console.log(justice[interestedIn]);
+// } else {
+//   console.log('Wrong request. Choose between firstName, lastName, age, job and friends.')
+// }
+
+// justice.location = 'usa';
+// justice['twitter'] = '@justicepelteir';
+// console.log(justice);
+
+//  challenge
+// "Justice has three friends, and his best friend is Michael"
+console.log(`${justice.firstName} has ${justice.friends.length} friends, and his best friend is ${justice.friends[0]}.`);
