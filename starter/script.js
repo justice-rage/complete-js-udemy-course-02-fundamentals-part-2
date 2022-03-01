@@ -148,33 +148,33 @@
 
 // Lecture 40: Basic Array Operations (Methods)
 
-const friends = [`Michael`, `Steven`, `Peter`];
+// const friends = [`Michael`, `Steven`, `Peter`];
 
-// Add elements
-const newLength = friends.push('Jay');
-console.log(friends);
-console.log(newLength);
+// // Add elements
+// const newLength = friends.push('Jay');
+// console.log(friends);
+// console.log(newLength);
 
-friends.unshift('john');
-console.log(friends);
+// friends.unshift('john');
+// console.log(friends);
 
-// Remove elements
-friends.pop(); // removes last element
-const popped = friends.pop(); // removes last element
-console.log(popped);
-console.log(friends);
+// // Remove elements
+// friends.pop(); // removes last element
+// const popped = friends.pop(); // removes last element
+// console.log(popped);
+// console.log(friends);
 
-friends.shift(friends); // removes first element
-console.log(friends);
+// friends.shift(friends); // removes first element
+// console.log(friends);
 
-console.log(friends.indexOf('Steven'));
-console.log(friends.indexOf('Bob'));
+// console.log(friends.indexOf('Steven'));
+// console.log(friends.indexOf('Bob'));
 
-friends.push(23);
-console.log(friends.includes('Steven'));
-console.log(friends.includes('Bob'));
-console.log(friends.includes(23));
+// friends.push(23);
+// console.log(friends.includes('Steven'));
+// console.log(friends.includes('Bob'));
+// console.log(friends.includes(23));
 
-if (friends.includes('Steven')) {
-  console.log(`You have a friend named Steven.`);
-}
+// if (friends.includes('Steven')) {
+//   console.log(`You have a friend named Steven.`);
+// }
