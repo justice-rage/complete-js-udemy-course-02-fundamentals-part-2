@@ -105,3 +105,43 @@
 // }
 // console.log(yearsUntilRetirement(1991, 'Justice'));
 // console.log(yearsUntilRetirement(1950, 'Mike'));
+
+// Lecture: Introduction to Arrays
+
+const friend1 = 'Michael';
+const firend2 = 'Steven';
+const firend3 = 'Peter';
+
+const friends = [`Michael`, `Steven`, `Peter`];
+console.log(friends);
+
+const y = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0])
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Jay';
+console.log(friends);
+// can mutate arrays, but can't completely change them
+const firstName = 'justice'
+const justice = [firstName, 'pelteir', 2037 - 1995, 'teacher', friends];
+console.log(justice);
+console.log(justice.length);
+
+// Array Exercise
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+}
+const years = [1990, 1967, 2002, 2010, 2018];
+
+console.log(calcAge(years));
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length-1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+console.log(ages);
