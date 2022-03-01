@@ -108,40 +108,73 @@
 
 // Lecture: Introduction to Arrays
 
-const friend1 = 'Michael';
-const firend2 = 'Steven';
-const firend3 = 'Peter';
+// const friend1 = 'Michael';
+// const firend2 = 'Steven';
+// const firend3 = 'Peter';
+
+// const friends = [`Michael`, `Steven`, `Peter`];
+// console.log(friends);
+
+// const y = new Array(1991, 1984, 2008, 2020);
+
+// console.log(friends[0])
+// console.log(friends[2]);
+
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
+
+// friends[2] = 'Jay';
+// console.log(friends);
+// // can mutate arrays, but can't completely change them
+// const firstName = 'justice'
+// const justice = [firstName, 'pelteir', 2037 - 1995, 'teacher', friends];
+// console.log(justice);
+// console.log(justice.length);
+
+// // Array Exercise
+// const calcAge = function (birthYear) {
+//   return 2037 - birthYear;
+// }
+// const years = [1990, 1967, 2002, 2010, 2018];
+
+// console.log(calcAge(years));
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
+// const age3 = calcAge(years[years.length-1]);
+// console.log(age1, age2, age3);
+
+// const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+// console.log(ages);
+
+// Lecture 40: Basic Array Operations (Methods)
 
 const friends = [`Michael`, `Steven`, `Peter`];
+
+// Add elements
+const newLength = friends.push('Jay');
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('john');
 console.log(friends);
 
-const y = new Array(1991, 1984, 2008, 2020);
-
-console.log(friends[0])
-console.log(friends[2]);
-
-console.log(friends.length);
-console.log(friends[friends.length - 1]);
-
-friends[2] = 'Jay';
+// Remove elements
+friends.pop(); // removes last element
+const popped = friends.pop(); // removes last element
+console.log(popped);
 console.log(friends);
-// can mutate arrays, but can't completely change them
-const firstName = 'justice'
-const justice = [firstName, 'pelteir', 2037 - 1995, 'teacher', friends];
-console.log(justice);
-console.log(justice.length);
 
-// Array Exercise
-const calcAge = function (birthYear) {
-  return 2037 - birthYear;
+friends.shift(friends); // removes first element
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob'));
+
+friends.push(23);
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob'));
+console.log(friends.includes(23));
+
+if (friends.includes('Steven')) {
+  console.log(`You have a friend named Steven.`);
 }
-const years = [1990, 1967, 2002, 2010, 2018];
-
-console.log(calcAge(years));
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[years.length-1]);
-console.log(age1, age2, age3);
-
-const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
-console.log(ages);
