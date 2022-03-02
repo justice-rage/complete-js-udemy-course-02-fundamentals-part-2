@@ -93,44 +93,44 @@ Let's go back to Mark and John comparing their BMIs! This time, let's use object
 TEST DATA: Mark weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
 */
 
-const mark = {
-  firstName: 'mark',
-  lastName: 'miller',
-  mass: 78,
-  height: 1.69,
+// const mark = {
+//   firstName: 'mark',
+//   lastName: 'miller',
+//   mass: 78,
+//   height: 1.69,
 
-  fullName: function() {
-    return `${this.firstName} ${this.lastName}`;
-  },
+//   fullName: function() {
+//     return `${this.firstName} ${this.lastName}`;
+//   },
 
-  calculateBMI: function() {
-    let bmi = 0;
-    this.bmi = (this.mass / this.height ** 2);
-    return this.bmi;
-  }
-};
+//   calculateBMI: function() {
+//     let bmi = 0;
+//     this.bmi = (this.mass / this.height ** 2);
+//     return this.bmi;
+//   }
+// };
 
-const john = {
-  firstName: 'john',
-  lastName: 'smith',
-  mass: 92,
-  height: 1.95,
+// const john = {
+//   firstName: 'john',
+//   lastName: 'smith',
+//   mass: 92,
+//   height: 1.95,
 
-  fullName: function() {
-    return `${this.firstName} ${this.lastName}`;
-  },
+//   fullName: function() {
+//     return `${this.firstName} ${this.lastName}`;
+//   },
 
-  calculateBMI: function() {
-    let bmi = 0;
-    this.bmi = (this.mass / this.height ** 2);
-    return bmi;
-  }
-};
+//   calculateBMI: function() {
+//     let bmi = 0;
+//     this.bmi = (this.mass / this.height ** 2);
+//     return bmi;
+//   }
+// };
 
-if(mark.calculateBMI() > john.calculateBMI()) {
-  console.log(`${mark.firstName}'s BMI (${mark.bmi}) is higher than ${john.firstName}'s BMI (${john.bmi}).`)
-} else {
-  console.log(`${john.firstName}'s BMI (${john.bmi}) is higher than ${mark.firstName}'s BMI (${mark.bmi}).`)
-}
+// if(mark.calculateBMI() > john.calculateBMI()) {
+//   console.log(`${mark.firstName}'s BMI (${mark.bmi}) is higher than ${john.firstName}'s BMI (${john.bmi}).`)
+// } else {
+//   console.log(`${john.firstName}'s BMI (${john.bmi}) is higher than ${mark.firstName}'s BMI (${mark.bmi}).`)
+// }
 
-console.log(mark.bmi, john.bmi);
+// console.log(mark.bmi, john.bmi);

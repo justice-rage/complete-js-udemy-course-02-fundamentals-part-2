@@ -263,3 +263,12 @@
 // // Challenge
 // // "Justice is a 42-year old teacher, and he has a drivers license."
 // console.log(justice.getSummary());
+
+// Lecture 46: Iteration: The for loop
+
+// console.log(`Lifting weights repetition 1 🏋️‍♂️`);
+
+// for loop keeps running while condition is true
+for(let rep = 1; rep <= 30; rep++) {
+  console.log(`Lifting weights repetition ${rep} 🏋️‍♂️`);
+}
