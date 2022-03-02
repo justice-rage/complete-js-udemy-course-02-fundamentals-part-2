@@ -227,39 +227,39 @@
 
 // Lecture 44: Object Methods
 
-const justice = {
-  firstName: 'justice',
-  lastName: 'pelteir',
-  birthYear: 1995,
-  job: 'teacher',
-  friends: ['michael', 'peter', 'john'],
-  hasDriversLicense: true,
+// const justice = {
+//   firstName: 'justice',
+//   lastName: 'pelteir',
+//   birthYear: 1995,
+//   job: 'teacher',
+//   friends: ['michael', 'peter', 'john'],
+//   hasDriversLicense: true,
 
-  // calcAge: function(birthYear) {
-  //   return 2037 - birthYear;
-  // }
+//   // calcAge: function(birthYear) {
+//   //   return 2037 - birthYear;
+//   // }
 
-  // calcAge: function() {
-  //   // console.log(this);
-  //   return 2037 - this.birthYear;
-  // }
+//   // calcAge: function() {
+//   //   // console.log(this);
+//   //   return 2037 - this.birthYear;
+//   // }
 
-  calcAge: function () {
-    this.age = 2037 - this.birthYear;
-    return this.age;
-  },
+//   calcAge: function () {
+//     this.age = 2037 - this.birthYear;
+//     return this.age;
+//   },
 
-  getSummary: function() {
-    return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`
-  }
-};
+//   getSummary: function() {
+//     return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`
+//   }
+// };
 
-console.log(justice.calcAge());
+// console.log(justice.calcAge());
 
-console.log(justice.age);
-console.log(justice.age);
-console.log(justice.age);
+// console.log(justice.age);
+// console.log(justice.age);
+// console.log(justice.age);
 
-// Challenge
-// "Justice is a 42-year old teacher, and he has a drivers license."
-console.log(justice.getSummary());
+// // Challenge
+// // "Justice is a 42-year old teacher, and he has a drivers license."
+// console.log(justice.getSummary());
