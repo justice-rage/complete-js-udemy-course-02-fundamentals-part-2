@@ -191,13 +191,13 @@
 
 // Lecture 43: Dot vs. Bracket Notation
 
-const justice = {
-  firstName: 'justice',
-  lastName: 'pelteir',
-  age: 2022 - 1995,
-  job: 'teacher',
-  friends: ['michael', 'peter', 'john']
-};
+// const justice = {
+//   firstName: 'justice',
+//   lastName: 'pelteir',
+//   age: 2022 - 1995,
+//   job: 'teacher',
+//   friends: ['michael', 'peter', 'john']
+// };
 
 // console.log(justice);
 
@@ -223,4 +223,43 @@ const justice = {
 
 //  challenge
 // "Justice has three friends, and his best friend is Michael"
-console.log(`${justice.firstName} has ${justice.friends.length} friends, and his best friend is ${justice.friends[0]}.`);
+// console.log(`${justice.firstName} has ${justice.friends.length} friends, and his best friend is ${justice.friends[0]}.`);
+
+// Lecture 44: Object Methods
+
+const justice = {
+  firstName: 'justice',
+  lastName: 'pelteir',
+  birthYear: 1995,
+  job: 'teacher',
+  friends: ['michael', 'peter', 'john'],
+  hasDriversLicense: true,
+
+  // calcAge: function(birthYear) {
+  //   return 2037 - birthYear;
+  // }
+
+  // calcAge: function() {
+  //   // console.log(this);
+  //   return 2037 - this.birthYear;
+  // }
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function() {
+    return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`
+  }
+};
+
+console.log(justice.calcAge());
+
+console.log(justice.age);
+console.log(justice.age);
+console.log(justice.age);
+
+// Challenge
+// "Justice is a 42-year old teacher, and he has a drivers license."
+console.log(justice.getSummary());
