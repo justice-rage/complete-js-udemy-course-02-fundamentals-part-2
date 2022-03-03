@@ -269,6 +269,28 @@
 // console.log(`Lifting weights repetition 1 🏋️‍♂️`);
 
 // for loop keeps running while condition is true
-for(let rep = 1; rep <= 30; rep++) {
-  console.log(`Lifting weights repetition ${rep} 🏋️‍♂️`);
+// for(let rep = 1; rep <= 30; rep++) {
+//   console.log(`Lifting weights repetition ${rep} 🏋️‍♂️`);
+// }
+
+// Lecture 47: Looping Arrays, Breaking and Continuing
+
+const justice = [
+  'justice',
+  'douglas',
+  2037 - 1995,
+  'teacher',
+  ['michael', 'peter', 'steven'],
+  true
+];
+const types = [];
+
+for(let index = 0; index < justice.length; index++) {
+  console.log(justice[index], typeof justice[index]);
+
+  types[index] = typeof justice[index];
 }
+
+// types[0] = typeof justice[index];
+
+console.log(types);
