@@ -286,11 +286,20 @@ const justice = [
 const types = [];
 
 for(let index = 0; index < justice.length; index++) {
+  // reading from justice array
   console.log(justice[index], typeof justice[index]);
 
-  types[index] = typeof justice[index];
+  // filling types of array
+  // types[index] = typeof justice[index];
+  types.push(typeof justice[index]);
 }
 
-// types[0] = typeof justice[index];
-
 console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for(let index = 0; index < years.length; index++) {
+  ages.push(2037 - years[index]);
+}
+console.log(ages);
