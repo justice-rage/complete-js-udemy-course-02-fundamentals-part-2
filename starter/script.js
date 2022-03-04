@@ -275,6 +275,51 @@
 
 // Lecture 47: Looping Arrays, Breaking and Continuing
 
+// const justice = [
+//   'justice',
+//   'douglas',
+//   2037 - 1995,
+//   'teacher',
+//   ['michael', 'peter', 'steven'],
+//   true
+// ];
+// const types = [];
+
+// for(let index = 0; index < justice.length; index++) {
+//   // reading from justice array
+//   console.log(justice[index], typeof justice[index]);
+  
+//   // filling types of array
+//   // types[index] = typeof justice[index];
+//   types.push(typeof justice[index]);
+// }
+
+// console.log(types);
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for(let index = 0; index < years.length; index++) {
+//   ages.push(2037 - years[index]);
+// }
+// console.log(ages);
+
+// // continue and break
+// console.log('--- ONLY STRINGS ---')
+// for(let index = 0; index < justice.length; index++) {
+//   if(typeof justice[index] !== 'string') continue;
+//   console.log(justice[index], typeof justice[index]);
+// }
+
+// console.log('--- BREAK WITH NUMBER ---')
+// for(let index = 0; index < justice.length; index++) {
+//   if(typeof justice[index] === 'number') break;
+  
+//   console.log(justice[index], typeof justice[index]);
+// }
+
+// Lecture 48: Looping Backwards and Loops in Loops
+
 const justice = [
   'justice',
   'douglas',
@@ -283,38 +328,15 @@ const justice = [
   ['michael', 'peter', 'steven'],
   true
 ];
-const types = [];
 
-for(let index = 0; index < justice.length; index++) {
-  // reading from justice array
-  console.log(justice[index], typeof justice[index]);
-
-  // filling types of array
-  // types[index] = typeof justice[index];
-  types.push(typeof justice[index]);
+for(let index = justice.length - 1; index >= 0; index--) {
+  console.log(index, justice[index]);
 }
 
-console.log(types);
+for(let exercise = 1; exercise < 4; exercise++) {
+  console.log(`---STARTING EXERCISE:${exercise}`);
 
-const years = [1991, 2007, 1969, 2020];
-const ages = [];
-
-for(let index = 0; index < years.length; index++) {
-  ages.push(2037 - years[index]);
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise}: Lifting weights repetition ${rep} 🏋️‍♂️`)
+  }
 }
-console.log(ages);
-
-// continue and break
-console.log('--- ONLY STRINGS ---')
-for(let index = 0; index < justice.length; index++) {
-  if(typeof justice[index] !== 'string') continue;
-  console.log(justice[index], typeof justice[index]);
-}
-
-console.log('--- BREAK WITH NUMBER ---')
-for(let index = 0; index < justice.length; index++) {
-  if(typeof justice[index] === 'number') break;
-
-  console.log(justice[index], typeof justice[index]);
-}
-
