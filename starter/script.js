@@ -303,3 +303,18 @@ for(let index = 0; index < years.length; index++) {
   ages.push(2037 - years[index]);
 }
 console.log(ages);
+
+// continue and break
+console.log('--- ONLY STRINGS ---')
+for(let index = 0; index < justice.length; index++) {
+  if(typeof justice[index] !== 'string') continue;
+  console.log(justice[index], typeof justice[index]);
+}
+
+console.log('--- BREAK WITH NUMBER ---')
+for(let index = 0; index < justice.length; index++) {
+  if(typeof justice[index] === 'number') break;
+
+  console.log(justice[index], typeof justice[index]);
+}
+
