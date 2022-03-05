@@ -155,39 +155,39 @@ HINT: Call calcTip in the loop and use the push method to add values to the tips
   4.3. Call the function with the 'totals' array
 */
 
-const calculateTip = function(bill) {
-  let tip;
+// const calculateTip = function(bill) {
+//   let tip;
 
-  if(bill >= 50 && bill <= 300) {
-    tip = bill * .15;
-  } else {
-    tip = bill * .2;
-  }  return tip;
-}
+//   if(bill >= 50 && bill <= 300) {
+//     tip = bill * .15;
+//   } else {
+//     tip = bill * .2;
+//   }  return tip;
+// }
 
-const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-let tips = [];
-let totals = [];
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// let tips = [];
+// let totals = [];
 
-for (let index = 0; index < bills.length; index++) {
-  const tip = calculateTip(bills[index]);
-  const bill = bills[index];
-  tips.push(tip)
-  const total = tip + bill;
-  totals.push(total);
-  console.log(`Bill: $${bill}
-Tip: $${tip}
-Total: $${total}`);
-}
+// for (let index = 0; index < bills.length; index++) {
+//   const tip = calculateTip(bills[index]);
+//   const bill = bills[index];
+//   tips.push(tip)
+//   const total = tip + bill;
+//   totals.push(total);
+//   console.log(`Bill: $${bill}
+// Tip: $${tip}
+// Total: $${total}`);
+// }
 
-const calculateAverage = function(arr) {
-  let sum = 0;
-  for (let index = 0; index < arr.length; index++) {
-    // sum = sum + arr[index];
-    sum += arr[index];
-  }
-  return sum / arr.length;
-}
-// console.log(calculateAverage([2,3,7]));
-console.log(calculateAverage(totals));
-console.log(calculateAverage(tips));
+// const calculateAverage = function(arr) {
+//   let sum = 0;
+//   for (let index = 0; index < arr.length; index++) {
+//     // sum = sum + arr[index];
+//     sum += arr[index];
+//   }
+//   return sum / arr.length;
+// }
+// // console.log(calculateAverage([2,3,7]));
+// console.log(calculateAverage(totals));
+// console.log(calculateAverage(tips));
