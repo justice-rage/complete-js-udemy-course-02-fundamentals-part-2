@@ -320,23 +320,46 @@
 
 // Lecture 48: Looping Backwards and Loops in Loops
 
-const justice = [
-  'justice',
-  'douglas',
-  2037 - 1995,
-  'teacher',
-  ['michael', 'peter', 'steven'],
-  true
-];
+// const justice = [
+//   'justice',
+//   'douglas',
+//   2037 - 1995,
+//   'teacher',
+//   ['michael', 'peter', 'steven'],
+//   true
+// ];
 
-for(let index = justice.length - 1; index >= 0; index--) {
-  console.log(index, justice[index]);
-}
+// for(let index = justice.length - 1; index >= 0; index--) {
+//   console.log(index, justice[index]);
+// }
 
-for(let exercise = 1; exercise < 4; exercise++) {
-  console.log(`---STARTING EXERCISE:${exercise}`);
+// for(let exercise = 1; exercise < 4; exercise++) {
+//   console.log(`---STARTING EXERCISE:${exercise}`);
 
-  for (let rep = 1; rep < 6; rep++) {
-    console.log(`Exercise ${exercise}: Lifting weights repetition ${rep} 🏋️‍♂️`)
-  }
-}
+//   for (let rep = 1; rep < 6; rep++) {
+//     console.log(`Exercise ${exercise}: Lifting weights repetition ${rep} 🏋️‍♂️`)
+//   }
+// }
+
+// Lecture 49: The While Loop
+
+//  for loop
+// for(let rep = 1; rep <= 10; rep++) {
+//   console.log(`FOR: Lifting weights repetition ${rep} 🏋️‍♂️`);
+// }
+
+// while loop
+// let rep = 1;
+// while(rep <= 10) {
+//   console.log(`WHILE: Lifting weights repetition ${rep} 🏋️‍♂️`);
+//   rep++;
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
+
+// while(dice !== 6) {
+//   console.log(`You rolled a ${dice}`);
+// dice = Math.trunc(Math.random() * 6) + 1;
+// if(dice === 6) console.log('Loop is about to end..');
+// }
