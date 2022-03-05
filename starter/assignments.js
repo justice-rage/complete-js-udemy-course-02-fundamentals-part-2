@@ -338,3 +338,31 @@
 //     console.log(`Exercise ${exercise}: Lifting weights repetition ${rep} 🏋️‍♂️`)
 //   }
 // }
+
+/////////////////////////////////
+
+// Assignment #13
+// Lecture: The while Loop
+
+// 1. Recreate the challenge from the lecture 'Looping Arrays, Breaking and Continuing', but this time using a while loop (call the array 'percentages3')
+
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100
+}
+
+let populations = [1441, 375, 6, 175];
+
+const percentages3 = [];
+let index = 0;
+while (index <populations.length) {
+  const percentage = percentageOfWorld1(populations[index]);
+  percentages3.push(percentage);
+  index++;
+}
+
+console.log(percentages3);
+
+// 2. Reflect on what solution you like better for this task: the for loop or the while loop?
+/*
+Initially, I preferred the 'while' loop as it makes sense from a logical perspective that a condition should dictate when a loop continues or stops. However, the risk of a condition in a for loop not occuring and an infinite loop being created is not worth the ease from my own limited experience. A for llop has become my defacto loop to utilize due to the safety and piece of mind it affords. I'm sure my views, knowledge and opinons on the topic will continue to fluctuate as I become more educated on software best practices through my studies and career.
+*/
