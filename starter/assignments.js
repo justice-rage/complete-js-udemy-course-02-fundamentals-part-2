@@ -245,27 +245,27 @@
 
 // 3. Add a method called 'checkIsland' to the 'myCountry' object. This method will set a new property on the object, called 'isIsland'. 'isIsland' will be true if there are no neighbouring countries, and false if there are. Use the ternary operator to set the property.
 
-myCountry = {
-  country: 'USA',
-  capital: 'Washington DC',
-  language: 'english',
-  population: 375,
-  neighbours: ['Canada', 'Mexico'],
+// myCountry = {
+//   country: 'USA',
+//   capital: 'Washington DC',
+//   language: 'english',
+//   population: 375,
+//   neighbours: ['Canada', 'Mexico'],
 
-  describe: function() {
-    return (`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`);
-  },
+//   describe: function() {
+//     return (`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`);
+//   },
 
   // checkIsland: function() {
   //   this.isIsland = this.neighbours.length === 0;
   //   return this.isIsland;
   // }
-  
-  checkIsland: function() {
-    this.isIsland = (this.neighbours.length === 0) ? true : false;
-    return this.isIsland;
-  }
-}
 
-console.log(myCountry.checkIsland());
-console.log(myCountry.isIsland);
+//   checkIsland: function() {
+//     this.isIsland = (this.neighbours.length === 0) ? true : false;
+//     return this.isIsland;
+//   }
+// }
+
+// console.log(myCountry.checkIsland());
+// console.log(myCountry.isIsland);
