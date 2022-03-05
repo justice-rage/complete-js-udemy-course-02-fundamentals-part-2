@@ -307,3 +307,34 @@
 
 // console.log(percentages2);
 // console.log(percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3]));
+
+//////////////////////////////////////
+
+// Assignment #12
+// Lecture: Looping Backwards and Loops in Loops
+
+// 1. Store this array of arrays into a variable called 'listOfNeighbours' [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']]; 
+
+const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+
+// 2. Log only the neighbouring countries to the console, one by one, not the entire arrays. Log a string like 'Neighbour: Canada' for each country
+
+// for (index = 0; index < listOfNeighbours.length; index++) {
+//   console.log(`Nighbor: ${listOfNeighbours[index]}`);
+// }
+
+// 3. You will need a loop inside a loop for this. This is actually a bit tricky, so don't worry if it's too difficult for you! But you can still try to figure this out anyway 😉
+
+for (index = 0; index < listOfNeighbours.length; index++) {
+  for (let x = 0; x < listOfNeighbours[index].length; x++) {
+    console.log(`Neighbor: ${listOfNeighbours[index][x]}`);
+  }
+}
+
+// for(let exercise = 1; exercise < 4; exercise++) {
+//   console.log(`---STARTING EXERCISE:${exercise}`);
+
+//   for (let rep = 1; rep < 6; rep++) {
+//     console.log(`Exercise ${exercise}: Lifting weights repetition ${rep} 🏋️‍♂️`)
+//   }
+// }
