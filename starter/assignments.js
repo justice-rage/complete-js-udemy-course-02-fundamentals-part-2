@@ -282,3 +282,28 @@
 // for (index = 1; index <= voters; index++) {
 //   console.log(`Voter number ${index} is currently voting.`)
 // }
+
+/////////////////////////////////
+
+// Assignment #11
+// Lecture: Looping Arrays, Breking and Continuing
+
+// 1. Let's bring back the 'populations' array from a previous assignment
+
+let populations = [1441, 375, 6, 175];
+
+// 2. Use a for loop to compute an array called 'percentages2' containing the percentages of the world population for the 4 population values. Use the function 'percentageOfWorld1' that you created earlier
+
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100
+}
+
+let percentages2 = [];
+
+for (index = 0; index < populations.length; index++) {
+  percentages2.push(percentageOfWorld1(populations[index]));
+}
+// 3. Confirm that 'percentages2' contains exactly the same values as the 'percentages' array that we created manually in the previous assignment, and reflect on how much better this solution is
+
+console.log(percentages2);
+console.log(percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3]));
