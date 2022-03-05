@@ -58,3 +58,20 @@
 // console.log(`China2: ${china2}`);
 // console.log(`USA2: ${usa2}`);
 // console.log(`Finland2: ${finland2}`);
+
+////////////////////////////////////////
+
+// Assignment #3
+// Lecture: Arrow Functions
+
+// 1. Recreate the last assignment, but this time create an arrow function called 'percentageOfWorld3'
+
+let percentageOfWorld3 = (population) => (population / 7900) * 100;
+
+let china3 = percentageOfWorld3(1441);
+let usa3 = percentageOfWorld3(375);
+let finland3 = percentageOfWorld3(6);
+
+console.log(`China3: ${china3}`);
+console.log(`USA3: ${usa3}`);
+console.log(`Finland3: ${finland3}`);
