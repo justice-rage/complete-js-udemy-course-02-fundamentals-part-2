@@ -185,10 +185,10 @@
 
 // 1. Create an object called 'myCountry' for a country of your choice, containing properties 'country', 'capital', 'language', 'population' and 'neighbours' (an array like we used in previous assignments)
 
-myCountry = {
-  country: 'USA',
-  capital: 'Washington DC',
-  language: 'english',
-  population: 375,
-  neighbours: ['Canada', 'Mexico']
-}
+// myCountry = {
+//   country: 'USA',
+//   capital: 'Washington DC',
+//   language: 'english',
+//   population: 375,
+//   neighbours: ['Canada', 'Mexico']
+// }
